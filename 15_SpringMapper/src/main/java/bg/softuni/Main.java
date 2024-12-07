@@ -25,14 +25,14 @@ public class Main implements CommandLineRunner {
         Scanner scanner = new Scanner(System.in);
         int bornBefore = Integer.parseInt(scanner.nextLine());
 
-//        List<EmployeeDTO> result = employeeService.findEmployeesBornBefore(bornBefore);
-//        List<EmployeeDTO> result = employeeService.findAllWithManager();
+      List<EmployeeDTO> result01 = employeeService.findEmployeesBornBefore(bornBefore);
+       List<EmployeeDTO> result02 = employeeService.findAllWithManager();
 
-        List<EmployeeDTO> result = managerService.findAllManagers();
+        List<EmployeeDTO> result03 = managerService.findAllManagers();
 
 //        CreateEmployeeDTO
 //        employeeService.create()
 
-        System.out.println(result);
+        System.out.println(result03);
     }
 }
